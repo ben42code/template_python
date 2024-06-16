@@ -1,0 +1,6 @@
+# IDE
+autopep8==2.0.4
+isort==5.13.2
+coverage==7.5.1
+
+# Project
