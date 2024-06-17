@@ -22,10 +22,10 @@ Get it from https://www.python.org/downloads/
     - When you're not sure to have your venv enabled, you can check if your default python executable is located in your virtual environment.  
     Check where is located your default python executable `python -c "import sys; print(sys.executable)"`  
     If your [venv](https://docs.python.org/3/library/venv.html#creating-virtual-environments) is enable, it should return something like: `.venv\Scripts\python.exe`
-- Upgrade `pip`
-    - `python -m pip install --upgrade pip`
-- Install the dependencies with [pip](https://pip.pypa.io/en/stable/cli/pip_install/):
-    - `pip install -r requirements.txt`
+- Upgrade `pip`  
+`python -m pip install --upgrade pip`
+- Install the dependencies with [pip](https://pip.pypa.io/en/stable/cli/pip_install/):  
+`pip install -r requirements.txt`
 - Run it!  
 `python.exe -m examples.main main`
 
