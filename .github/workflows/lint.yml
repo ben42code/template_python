@@ -1,7 +1,7 @@
-name: run-tests-actions
+name: run-lint-actions
 on: [push, pull_request]
 jobs:
-  unittests-job:
+  flake8-lint-job:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
@@ -15,4 +15,4 @@ jobs:
         pip install -r requirements.txt
     - name: Tests
       run: |
-        python -m unittest discover -v -s "tests" -p "*_test.py" -t "."
+        python -m flake8 .
