@@ -47,10 +47,22 @@ Get it from https://www.python.org/downloads/
     - All the unit tests: `coverage run -m unittest discover -s "tests" -p "*_test.py" -t "."`
     - A specific unit test: `coverage run -m unittest -v 'tests.unit.fibonacci_test.Fibo_Test.test_callWithValidInput_0'`
 - Generate the coverage results:  
+    - `coverage report`  
+    Text version of the coverage results
+    - `coverage report --format=total`  
+    Total coverage result (no details)
     - `coverage lcov`  
     Will generate an `lcov.info` file that will be processed by [`Coverage Gutters` extension](https://marketplace.visualstudio.com/items?itemName=ryanluker.vscode-coverage-gutters) in `Visual Studio Code`. `.vscode/settings.json` is configured accordingly.
     - `coverage html`  
     Will generate an HTML version of the coverage results. You may access those from `<repo>/htmlcov/index.html`.
+
+### Linter
+[`flake8`](https://pypi.org/project/flake8/) is part the installed packages, you just need to:
+- run [`flake8`](https://pypi.org/project/flake8/) on the repo:  
+`python -m flake8 .`
+- Check if any error has been reported.
+
+You may also access [`flake8`](https://pypi.org/project/flake8/) from [VSCode](https://code.visualstudio.com/) if you installed [flake 8 extension](https://marketplace.visualstudio.com/items?itemName=ms-python.flake8)
 
 ## IDE
 - Install VSCode:  
