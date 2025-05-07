@@ -11,6 +11,7 @@
             "cwd": "${workspaceFolder}",
             "console": "integratedTerminal",
             "module": "${command:extension.commandvariable.file.relativeFileDotsNoExtension}",
+            "justMyCode": false,
         },
         {
             "name": "Python Debugger: main module",
@@ -19,6 +20,7 @@
             "cwd": "${workspaceFolder}",
             "console": "integratedTerminal",
             "module": "examples.main",
+            "justMyCode": false,
         },
     ],
 }
