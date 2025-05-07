@@ -86,3 +86,7 @@ class FiboAsync_Test(unittest.IsolatedAsyncioTestCase):
                     # Testing for implementation detail is not a great idea.
                     # Just wanted to play with mocks on recursive calls
                     self.assertEqual(testCase.expectedRecursiveCalls, mockedFibo.call_count)
+
+
+if __name__ == '__main__':
+    unittest.main(verbosity=2)
